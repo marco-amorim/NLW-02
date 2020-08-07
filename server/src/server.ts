@@ -2,13 +2,21 @@ import express from 'express';
 
 const app = express();
 
-app.get('/users', (req, res) => {
-	const users = [
-		{ name: 'Marco', age: 24 },
-		{ name: 'Amorim', age: 23 },
-	];
+app.use(express.json());
 
-	return res.json(users);
+/*
+	GET: Buscar ou listar uma informacao
+	POST: Criar alguma nova informacao
+	PUT: Atualizar uma informacao existente
+	DELETE: Deletar uma informacao existente
+
+	Corpo (Request Body): Dados para criacao ou atualizacao de um registro
+	Route Params:	Identificar qual recurso eu quero atualizar ou deletar
+	Query Params: Paginacao, filtros, ordenacao
+*/
+
+app.get('/users', (req, res) => {
+	return res.json({ message: 'hello world' });
 });
 
 app.listen(3333);
