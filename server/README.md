@@ -15,12 +15,12 @@
 ## Extras
 
 - Métodos HTTP 
-  - GET: Buscar ou listar uma informacao
-  - POST: Criar alguma nova informacao
-  - PUT: Atualizar uma informacao existente
-  - DELETE: Deletar uma informacao existente
+  - GET: Buscar ou listar uma informação
+  - POST: Criar alguma nova informação
+  - PUT: Atualizar uma informação existente
+  - DELETE: Deletar uma informação existente
 
 - Estrutura e Parâmetros
-  - Corpo (Request Body): Dados para criacao ou atualizacao de um registro
+  - Corpo (Request Body): Dados para criação ou atualização de um registro
   - Route Params:	Identificar qual recurso eu quero atualizar ou deletar
-	- Query Params: Paginacao, filtros, ordenacao (?page=2&sort=name)
+  - Query Params: Paginação, filtros, odernação (?page=2&sort=name)
